@@ -8,8 +8,17 @@ import { store } from './store.js'
 export default {
   data() {
     return {
-      store,
+
+      headermenu: [
+        { menutext: 'Home' },
+        { menutext: 'Order Online' },
+        { menutext: 'About' },
+        { menutext: 'News' },
+        { menutext: 'Contact us' },
+       ],
+
     }
+
   },
   components: {
     AppHeader,
@@ -25,7 +34,7 @@ export default {
 
 <template>
   <!-- AppHeader -->
-  <AppHeader />
+  <AppHeader :headermenu = "headermenu"  />
   <!-- AppMain -->
   <AppMain />
   <!-- AppJumbo -->
