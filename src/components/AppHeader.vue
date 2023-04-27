@@ -36,8 +36,10 @@ export default {
         </div>
 
         <div class="header-icons mt-4 d-flex flex-column align-items-end">
-            <i class="fa-regular fa-square fa-3x"></i>
-            <i class="fa-regular fa-square fa-3x"></i>
+            <img class="mb-2" src="../assets/img/Header/img1.png" alt="">
+            <img src="../assets/img/Header/img2.png" alt="">
+            <!-- <i class="fa-regular fa-square fa-3x"></i> -->
+            <!-- <i class="fa-regular fa-square fa-3x"></i> -->
         </div>
 
 
@@ -71,6 +73,14 @@ export default {
         i {
             color: red;
             margin: 5px;
+        }
+    }
+
+    .header-icons{
+        img{
+           width:2%;
+           margin-right: 5px;
+           border-radius: 5px;
         }
     }
 

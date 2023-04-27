@@ -40,87 +40,172 @@ export default {
 
       ],
 
-        menucategories:[
-          {
-            image:'appetizers-menu-background.jpg',
-            title:'APPETIZERS'
-          },
+      menucategories: [
+        {
+          image: 'appetizers-menu-background.jpg',
+          title: 'APPETIZERS'
+        },
 
-          {
-            image:'burgers-menu-background.jpg',
-            title:'BURGERS'
-          },
+        {
+          image: 'burgers-menu-background.jpg',
+          title: 'BURGERS'
+        },
 
-          {
-            image:'pizza-menu-background.jpg',
-            title:'PIZZA'
-          },
+        {
+          image: 'pizza-menu-background.jpg',
+          title: 'PIZZA'
+        },
 
-          {
-            image:'fries-menu-background.jpg',
-            title:'FRIES'
-          },
+        {
+          image: 'fries-menu-background.jpg',
+          title: 'FRIES'
+        },
 
-          {
-            image:'sides-menu-background.jpg',
-            title:'SIDES'
-          },
+        {
+          image: 'sides-menu-background.jpg',
+          title: 'SIDES'
+        },
 
-          {
-            image:'desserts-menu-background.jpg',
-            title:'DESSERTS'
-          },
+        {
+          image: 'desserts-menu-background.jpg',
+          title: 'DESSERTS'
+        },
 
-          {
-            image:'beverages-menu-background.jpg',
-            title:'BEVERAGES'
-          },
+        {
+          image: 'beverages-menu-background.jpg',
+          title: 'BEVERAGES'
+        },
 
-          {
-            image:'specials-menu-background.jpg',
-            title:'SPECIALS'
-          },
+        {
+          image: 'specials-menu-background.jpg',
+          title: 'SPECIALS'
+        },
 
-        ],
+      ],
 
-        orderonline:[
-          {
-            text: 'Appetizer'
-          },
+      orderonline: [
+        {
+          text: 'Appetizer'
+        },
 
-          {
-            text: 'Burgers'
-          },
+        {
+          text: 'Burgers'
+        },
 
-          {
-            text: 'Pizzas'
-          },
+        {
+          text: 'Pizzas'
+        },
 
-          {
-            text: 'fries'
-          },
+        {
+          text: 'Fries'
+        },
 
-          {
-            text: 'Sides'
-          },
+        {
+          text: 'Sides'
+        },
 
-          {
-            text: 'Desserts'
-          },
+        {
+          text: 'Desserts'
+        },
 
-          {
-            text: 'Beverage'
-          },
+        {
+          text: 'Beverage'
+        },
 
-          {
-            text: 'Specials'
-          },
-
-
-        ]
+        {
+          text: 'Specials'
+        },
 
 
+      ],
 
+      menunavigate: [
+        {
+          text: 'Home'
+        },
+
+        {
+          text: 'Alternate Home'
+        },
+
+        {
+          text: 'Menu'
+        },
+
+        {
+          text: 'About'
+        },
+
+        {
+          text: 'News'
+        },
+
+        {
+          text: 'Contact Us'
+        },
+
+        {
+          text: 'Cart'
+        },
+      ],
+
+      menuinfo: [
+        {
+          text: 'My Account'
+        },
+
+        {
+          text: 'Privacy Policy'
+        },
+
+        {
+          text: 'Terms of Service'
+        },
+
+
+      ],
+
+
+
+      menuhours: [
+        {
+          day: 'Mon - ',
+          text: ' 10AM to 11PM'
+        },
+
+        {
+          day: 'Tue -',
+          text: '  10AM to 11PM'
+        },
+
+        {
+          day: 'Wed -',
+          text: '    10AM to 11PM'
+        },
+
+        {
+          day: 'Thur -',
+          text: ' 10AM to 11PM'
+        },
+
+        {
+          day: 'Fri -',
+          text: ' 10AM to 11PM'
+        },
+
+        {
+          day: 'Sat -',
+          text: ' 10AM to 11PM'
+        },
+
+        {
+          day: 'Sun -',
+          text: ' 11AM to 11PM'
+        },
+
+
+
+      ],
 
     }
 
@@ -144,13 +229,13 @@ export default {
   <!-- AppPopular -->
   <AppPopular :maincard="maincard" />
   <!-- AppMenu -->
-  <AppMenu :menucategories="menucategories"/>
+  <AppMenu :menucategories="menucategories" />
   <!-- AppJumbo -->
   <AppJumbo />
   <!-- AppNews -->
   <AppNews />
   <!-- AppFooter -->
-  <AppFooter :orderonline="orderonline" />
+  <AppFooter :orderonline="orderonline" :menunavigate="menunavigate" :menuinfo="menuinfo" :menuhours="menuhours" />
 </template>
 
 <style lang="scss">

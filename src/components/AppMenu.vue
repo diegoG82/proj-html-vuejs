@@ -16,9 +16,6 @@ export default {
 </script>
 
 
-
-
-
 <template>
     <div class="container mt-4">
         <div class="d-flex justify-content-end"><button type="button"
@@ -38,24 +35,6 @@ export default {
 
 
         <div class="cares">
-
-            <!-- <ul class="d-flex justify-content-between align-items-center">
-            <li>
-                <img src="../assets/img/appmenu/vegan-symbol-png-5.png" alt="">
-                <p>Vegetarian</p>
-            </li>
-            <li>
-                <p>Gluten Free</p>
-            </li>
-            <li>
-                <p>Dairy Free</p>
-            </li>
-            <li>
-                <p>Keto Friendly</p>
-            </li>
-        </ul> -->
-
-
 
             <div class="row row-cols-4 d-flex cares">
 
@@ -94,13 +73,6 @@ export default {
                 </div>
 
 
-
-
-
-
-                <!-- <div class="col"><img src="../assets/img/appmenu/gluten-free-clip-art-8.png" alt=""></div>
-            <div class="col"><img src="../assets/img/appmenu/dairy.png" alt=""></div>
-            <div class="col"><img src="../assets/img/appmenu/keto.png" alt=""></div> -->
             </div>
 
 
@@ -144,16 +116,16 @@ export default {
 
     }
 
-    
+
 
 }
 
 
 .cares {
-        height: 200px;
+    height: 200px;
 
-        .card-cares {
-            width: 100px
-        }
-    }   
+    .card-cares {
+        width: 100px
+    }
+}
 </style>
