@@ -36,8 +36,6 @@ export default {
         </div>
 
         <div class="header-icons mt-4 d-flex flex-column align-items-end">
-            <!-- <i class="fa-regular fa-folder-open fa-2x"></i>
-            <i class="fa-solid fa-money-bill-1-wave fa-2x"></i> -->
             <i class="fa-regular fa-square fa-3x"></i>
             <i class="fa-regular fa-square fa-3x"></i>
         </div>

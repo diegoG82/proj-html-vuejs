@@ -1,14 +1,18 @@
 <script>
 export default {
-
+    name: 'AppMenu',
 }
 </script>
 
 
 
 
+
 <template>
-    <h2>Main</h2>
+   <div class="container">
+
+    
+   </div>
 </template>
 
 
