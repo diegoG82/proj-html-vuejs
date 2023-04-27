@@ -81,7 +81,40 @@ export default {
             title:'SPECIALS'
           },
 
+        ],
 
+        orderonline:[
+          {
+            text: 'Appetizer'
+          },
+
+          {
+            text: 'Burgers'
+          },
+
+          {
+            text: 'Pizzas'
+          },
+
+          {
+            text: 'fries'
+          },
+
+          {
+            text: 'Sides'
+          },
+
+          {
+            text: 'Desserts'
+          },
+
+          {
+            text: 'Beverage'
+          },
+
+          {
+            text: 'Specials'
+          },
 
 
         ]
@@ -117,7 +150,7 @@ export default {
   <!-- AppNews -->
   <AppNews />
   <!-- AppFooter -->
-  <AppFooter />
+  <AppFooter :orderonline="orderonline" />
 </template>
 
 <style lang="scss">

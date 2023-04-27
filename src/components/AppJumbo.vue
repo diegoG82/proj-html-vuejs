@@ -1,6 +1,6 @@
 <script>
 export default {
-
+name: 'AppJumbo'
 }
 </script>
 
@@ -32,7 +32,7 @@ export default {
     background-position: center bottom;
 
     .jumbo-container {
-            // border: 1px solid black;
+                // border: 1px solid black;
         height: 300px;
         width: 55%;
 
