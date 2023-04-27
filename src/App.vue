@@ -38,7 +38,56 @@ export default {
           price: '$6.99',
         },
 
-      ]
+      ],
+
+        menucategories:[
+          {
+            image:'appetizers-menu-background.jpg',
+            title:'APPETIZERS'
+          },
+
+          {
+            image:'burgers-menu-background.jpg',
+            title:'BURGERS'
+          },
+
+          {
+            image:'pizza-menu-background.jpg',
+            title:'PIZZA'
+          },
+
+          {
+            image:'fries-menu-background.jpg',
+            title:'FRIES'
+          },
+
+          {
+            image:'sides-menu-background.jpg',
+            title:'SIDES'
+          },
+
+          {
+            image:'desserts-menu-background.jpg',
+            title:'DESSERTS'
+          },
+
+          {
+            image:'beverages-menu-background.jpg',
+            title:'BEVERAGES'
+          },
+
+          {
+            image:'specials-menu-background.jpg',
+            title:'SPECIALS'
+          },
+
+
+
+
+        ]
+
+
+
 
     }
 
@@ -62,7 +111,7 @@ export default {
   <!-- AppPopular -->
   <AppPopular :maincard="maincard" />
   <!-- AppMenu -->
-  <AppMenu/>
+  <AppMenu :menucategories="menucategories"/>
   <!-- AppJumbo -->
   <AppJumbo />
   <!-- AppNews -->
