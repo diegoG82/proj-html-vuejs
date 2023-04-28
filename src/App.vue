@@ -4,7 +4,7 @@ import AppPopular from './components/AppPopular.vue';
 import AppMenu from './components/AppMenu.vue';
 import AppJumbo from './components/AppJumbo.vue';
 import AppNews from './components/Appnews.vue';
-import AppFooter from './AppFooter.vue';
+import AppFooter from './components/AppFooter.vue';
 export default {
   data() {
     return {

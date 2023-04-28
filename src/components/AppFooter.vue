@@ -33,8 +33,8 @@ export default {
             <ul class=" justify-content-between mt-4">
                 <li class="mb-4 text-uppercase">INFORMATION</li>
                 <li class="mb-2" v-for="(element, index) in menuinfo" :key="index">{{ element.text }}</li>
-                <li class="mb-2"><img class="logo" src="./assets/img/AppFooter/app-store-badge.png" alt=""></li>
-                <li class="mb-2"><img class="logo" src="./assets/img/AppFooter/play-store-badge.png" alt=""></li>
+                <li class="mb-2"><img class="logo" src="../assets/img/AppFooter/app-store-badge.png" alt=""></li>
+                <li class="mb-2"><img class="logo" src="../assets/img/AppFooter/play-store-badge.png" alt=""></li>
 
             </ul>
 
@@ -47,7 +47,7 @@ export default {
 
             <ul class=" justify-content-between mt-4 text-center">
                 <li>VOUCHER</li>
-                <li><img src="./assets/img/AppFooter/footer-coupon-200x200.png" alt=""></li>
+                <li><img src="../assets/img/AppFooter/footer-coupon-200x200.png" alt=""></li>
                 <li>JustUseTheCode</li>
                 <li class="yellow">FIRSTORDER</li>
                 <li>AtCheckout</li>
@@ -90,20 +90,18 @@ export default {
 <style lang="scss" scoped>
 .footer {
     height: 1000px;
-    background-image: url(./assets/img/AppFooter/footer-background-scaled.jpg);
+    background-image: url(../assets/img/AppFooter/footer-background-scaled.jpg);
     background-size: cover;
     background-position: center bottom;
 
     .ms_container {
         height: 400px;
-        // border: 1px solid white;
         width: 80%;
         margin: 0 auto;
 
         ul {
             color: white;
             list-style: none;
-            // border: 1px solid white;
             height: 350px;
             width: calc(100% / 5);
             padding: 1rem;
@@ -112,7 +110,6 @@ export default {
                 color: yellow;
             }
 
-            // text-align: center;
             .logo {
                 border: 1px solid white;
                 border-radius: 5px;
