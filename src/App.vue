@@ -5,7 +5,6 @@ import AppMenu from './components/AppMenu.vue';
 import AppJumbo from './components/AppJumbo.vue';
 import AppNews from './components/Appnews.vue';
 import AppFooter from './AppFooter.vue';
-import { store } from './store.js'
 export default {
   data() {
     return {
@@ -116,6 +115,24 @@ export default {
           text: 'Specials'
         },
 
+
+      ],
+
+
+      newsmenu:[
+        {
+          image: 'pancake-burger-400x300.jpg',
+          title: 'NEW: The Pankake Burger',
+          text:'Our new Pancake burger, made by two burgers inside our fresh pancakes, fresh cheddar, garlic and our home made sauce. '
+        },
+
+        {
+          image: 'new-milkshake-menu-400x300.jpg',
+          title:'New Milkshake Menu',
+          text:'Enjoy our new Milkshake menu with a ten different types of flawor, topping and three different size at your service.'
+        },
+
+      
 
       ],
 
@@ -233,11 +250,15 @@ export default {
   <!-- AppJumbo -->
   <AppJumbo />
   <!-- AppNews -->
-  <AppNews />
+  <AppNews :newsmenu="newsmenu" />
   <!-- AppFooter -->
   <AppFooter :orderonline="orderonline" :menunavigate="menunavigate" :menuinfo="menuinfo" :menuhours="menuhours" />
 </template>
 
 <style lang="scss">
 @use "./style.scss" as *;
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 </style>

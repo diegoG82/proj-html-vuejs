@@ -58,9 +58,6 @@ export default {
                 <li>AtCheckout</li>
             </ul>
 
-
-
-
         </div>
 
 
@@ -83,7 +80,9 @@ export default {
                 </ul>
             </div>
 
-            <p class="credits"><i class="fa-regular fa-copyright"></i> Copyright 2012-2020 avada theme by <span class="text-white">ThemeFusion</span> All rights reserved Powered by <span class="text-white">WordPress</span></p>
+            <p class="credits"><i class="fa-regular fa-copyright"></i> Copyright 2012-2020 Avada theme by <span
+                    class="text-white">ThemeFusion</span> |All rights reserved| Powered by <span
+                    class="text-white">WordPress</span></p>
 
 
 
@@ -133,7 +132,7 @@ export default {
     }
 
     .bottom-footer {
-            margin: 0 auto;
+        margin: 0 auto;
         height: 300px;
         width: 600px;
 
@@ -159,16 +158,17 @@ export default {
             list-style: none;
             color: white;
             padding-left: unset;
-            gap:10px;   
-            font-size:1.5rem ;
-            margin:2    rem;
+            gap: 10px;
+            font-size: 1.5rem;
+            margin: 2rem;
         }
-        .credits{
-            color:yellow;
+
+        .credits {
+            color: yellow;
             font-size: 0.8rem;
-     
         }
 
 
     }
-}</style>
+}
+</style>

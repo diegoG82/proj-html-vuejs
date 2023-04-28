@@ -42,16 +42,16 @@ export default {
 
                 <div class="col d-flex mt-4 justify-content-center">
                     <div class="card-cares">
-                        <div class="cares-img"><img src="../assets/img/appmenu/vegan-symbol-png-5.png" alt=""></div>
+                        <div class="cares-img"><img src="../assets/img/appmenu/vegan.jpg" alt=""></div>
 
-                        <p class="text-center ">Vegetarian</p>
+                        <p class="text-center mt-2 ">Vegetarian</p>
                     </div>
                 </div>
 
 
                 <div class="col d-flex mt-4 justify-content-center">
                     <div class="card-cares">
-                        <div class="cares-img"><img src="../assets/img/appmenu/gluten-free-clip-art-8.png" alt=""></div>
+                        <div class="cares-img"><img class="gluten" src="../assets/img/appmenu/gluten.jpg" alt=""></div>
 
                         <p class="text-center mt-2 ">Gluten Free</p>
                     </div>
@@ -59,7 +59,7 @@ export default {
 
                 <div class="col d-flex mt-4 justify-content-center">
                     <div class="card-cares">
-                        <div class="cares-img"><img src="../assets/img/appmenu/gluten-free-clip-art-8.png" alt=""></div>
+                        <div class="cares-img"><img class="diary" src="../assets/img/appmenu/dairy.png" alt=""></div>
 
                         <p class="text-center mt-2 ">Dairy Free</p>
                     </div>
@@ -67,8 +67,8 @@ export default {
 
                 <div class="col d-flex mt-4 justify-content-center">
                     <div class="card-cares">
-                        <div class="cares-img"><img src="../assets/img/appmenu/keto.png" alt=""></div>
-                        <p class="text-center ">keto Friendly</p>
+                        <div class="cares-img"><img src="../assets/img/appmenu/keto.jpg" alt=""></div>
+                        <p class="text-center mt-2 ">Keto Friendly</p>
                     </div>
                 </div>
 
@@ -127,5 +127,16 @@ export default {
     .card-cares {
         width: 100px
     }
+
+    .cares-img {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .gluten,.diary {
+        scale: 0.8;
+    }
+
 }
 </style>

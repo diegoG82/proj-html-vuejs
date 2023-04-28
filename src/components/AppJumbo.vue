@@ -32,17 +32,17 @@ name: 'AppJumbo'
     background-position: center bottom;
 
     .jumbo-container {
-                // border: 1px solid black;
         height: 300px;
         width: 55%;
 
         h3{
-            font-size:1.2rem;
+            font-size:1.5rem;
             color:white;
         }
 
         h2{
-            font-size: 3rem;
+            font-size: 3.5rem;
+            font-weight: bolder;
             color: yellow;
         }
 

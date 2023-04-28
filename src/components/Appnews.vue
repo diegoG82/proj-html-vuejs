@@ -1,6 +1,16 @@
 <script>
 export default {
-    name: 'AppNews'
+    name: 'AppNews',
+
+    props: {
+        newsmenu: Array,
+    },
+
+    methods: {
+        getImage(element) {
+            return new URL(`../assets/img/news/${element.image}`, import.meta.url).href;
+        }
+    }
 
 }
 </script>
@@ -18,28 +28,19 @@ export default {
 
         <div class="row row-cols-2 g-4 mt-4 d-flex">
 
-            <div class="col">
+            
 
-                <div class="card text-center">
-                    <img src="../assets/img/news/pancake-burger-400x300.jpg " alt="">
-                    <h2>NEW: The Pancake Burger</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi suscipit dolore provident, iusto
-                        cupiditate quo quia nesciunt repudiandae aperiam corporis distinctio libero blanditiis non ratione
-                        cum? Necessitatibus deleniti alias quis?</p>
+            <div class="col" v-for="(element, index) in newsmenu" :key="index">
+
+                <div class="card text-center" :href="element.url">
+                    <img :src="getImage(element)" alt="">
+                    <h2 class="mt-4">{{ element.title }}</h2>
+                    <p>{{ element.text }}</p>
                 </div>
             </div>
 
 
-            <div class="col">
 
-                <div class="card text-center">
-                    <img src="../assets/img/news/new-milkshake-menu-400x300.jpg " alt="">
-                    <h2>New Milkshake Menu</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi suscipit dolore provident, iusto
-                        cupiditate quo quia nesciunt repudiandae aperiam corporis distinctio libero blanditiis non ratione
-                        cum? Necessitatibus deleniti alias quis?</p>
-                </div>
-            </div>
 
 
         </div>
@@ -50,10 +51,11 @@ export default {
 
 
 <style lang="scss" scoped>
-.card{
+.card {
     border: none;
-    p{
-        font-size: 0.8rem;
-    }
+
+    // p {
+    //     font-size: 0.8rem;
+    // }
 }
 </style>

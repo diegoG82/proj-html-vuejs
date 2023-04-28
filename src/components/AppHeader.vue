@@ -23,8 +23,10 @@ export default {
                 <ul class="d-flex justify-content-between">
 
                     <li v-for="(element, index) in headermenu" :key="index">
-                        {{ element.menutext }}</li>
+                        <span id="list"> {{ element.menutext }}</span> <i class="fa-solid fa-chevron-down"></i>
+                    </li>
                     <li><i class="fa-solid fa-cart-shopping"></i></li>
+
 
                 </ul>
             </div>
@@ -36,17 +38,17 @@ export default {
         </div>
 
         <div class="header-icons mt-4 d-flex flex-column align-items-end">
+
             <img class="mb-2" src="../assets/img/Header/img1.png" alt="">
             <img src="../assets/img/Header/img2.png" alt="">
-            <!-- <i class="fa-regular fa-square fa-3x"></i> -->
-            <!-- <i class="fa-regular fa-square fa-3x"></i> -->
+
         </div>
 
 
 
         <div class="container main-header mt-4 ">
             <h3>Hungry?</h3>
-            <h2>Great Food</h2>
+            <h2 class="header-title">Great Food</h2>
             <h2>Delivered</h2>
             <button type="button" class="btn btn-danger rounded-pill">VIEW OUR MENU <i
                     class="fa-solid fa-circle-arrow-right"></i></button>
@@ -76,16 +78,16 @@ export default {
         }
     }
 
-    .header-icons{
-        img{
-           width:2%;
-           margin-right: 5px;
-           border-radius: 5px;
+    .header-icons {
+        img {
+            width: 2%;
+            margin-right: 5px;
+            border-radius: 5px;
         }
+
     }
 
     .header-list {
-        // border: 2px solid white;
         width: 100%;
         height: 50px;
 
@@ -102,6 +104,24 @@ export default {
 
             ul {
                 list-style: none;
+
+                .fa-chevron-down {
+                    display: none;
+
+                }
+
+                li:hover i {
+                    color: yellow;
+                    display: inline-block;
+                }
+
+                li:hover #list {
+                    color: yellow;
+
+                }
+
+
+
             }
         }
 
@@ -109,16 +129,14 @@ export default {
     }
 
     .header-icons {
-        // border: 1px solid white;
+
         height: 100px;
         color: white;
-        // i{
-        //     margin: 5px;
-        // }
+
     }
 
     .main-header {
-        // border: 1px solid white;
+
         height: 300px;
         color: white;
 
@@ -126,8 +144,14 @@ export default {
             font-size: 3rem;
         }
 
+        .header-title {
+            color: yellow;
+            font-size: 3.5rem;
+        }
+
         button {
             font-size: 0.7rem;
         }
     }
-}</style>
+}
+</style>
