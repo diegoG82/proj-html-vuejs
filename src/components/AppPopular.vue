@@ -87,7 +87,6 @@ export default {
     bottom: 50px;
 
     .main-nav {
-        // border: 1px solid black;
         height: 50px;
         line-height: 50px;
         list-style: none;
@@ -101,8 +100,13 @@ export default {
     .popular-dishes {
         height: 750px;
 
+        .row {
+            height: 100%;
+        }
+
         .col {
             height: 100%;
+            position: relative;
 
             &:hover .addtocart {
                 display: block;
@@ -111,6 +115,7 @@ export default {
 
         .card {
             height: 400px;
+            border: none;
 
             img {
                 max-width: 100%;
@@ -127,11 +132,13 @@ export default {
             height: 100px;
             width: 100px;
             text-align: center;
-            position: relative;
-            bottom: 150px;
-            left: 160px;
             color: white;
             font-size: 1rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
 
             i {
                 padding: 1rem;

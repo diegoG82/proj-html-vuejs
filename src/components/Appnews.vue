@@ -28,8 +28,6 @@ export default {
 
         <div class="row row-cols-2 g-4 mt-4 d-flex">
 
-            
-
             <div class="col" v-for="(element, index) in newsmenu" :key="index">
 
                 <div class="card text-center" :href="element.url">
@@ -37,12 +35,8 @@ export default {
                     <h2 class="mt-4">{{ element.title }}</h2>
                     <p>{{ element.text }}</p>
                 </div>
+                
             </div>
-
-
-
-
-
         </div>
 
     </div>
@@ -53,9 +47,5 @@ export default {
 <style lang="scss" scoped>
 .card {
     border: none;
-
-    // p {
-    //     font-size: 0.8rem;
-    // }
 }
 </style>
