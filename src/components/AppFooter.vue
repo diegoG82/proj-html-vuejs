@@ -57,7 +57,7 @@ export default {
 
 
         <div class="bottom-footer text-center">
-            <img class="mb-2" src="../src/assets/img/AppFooter/takeout-logo.png" alt="">
+            <img class="mb-2" src="../assets/img/AppFooter/takeout-logo.png" alt="">
             <h2 class="yellow">Stay In The Loop</h2>
             <p class="text-white">Sign up to receive up to date news and offers directly in your inbox
             </p>
