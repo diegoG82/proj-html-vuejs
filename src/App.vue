@@ -123,16 +123,14 @@ export default {
         {
           image: 'pancake-burger-400x300.jpg',
           title: 'NEW: The Pankake Burger',
-          text:'Our new Pancake burger, made by two burgers inside our fresh pancakes, fresh cheddar, garlic and our home made sauce. '
+          text:'Our new Pancake Burger, made by two burgers inside our fresh pancakes, premium cheddar, garlic and our home made sauce. '
         },
 
         {
           image: 'new-milkshake-menu-400x300.jpg',
           title:'New Milkshake Menu',
-          text:'Enjoy our new Milkshake menu with a ten different types of flawor, topping and three different size at your service.'
+          text:'Enjoy our new Milkshake menu with an huge choice of tastes, topping and three different size at your service.'
         },
-
-      
 
       ],
 

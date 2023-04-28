@@ -15,13 +15,7 @@ export default {
 
 }
 
-
-
-
 </script>
-
-
-
 
 <template>
     <section>
@@ -128,8 +122,6 @@ export default {
 
         }
 
-
-
         .addtocart {
             display: none;
             height: 100px;
@@ -141,25 +133,14 @@ export default {
             color: white;
             font-size: 1rem;
 
-
-
-
             i {
                 padding: 1rem;
                 font-size: 1.5rem;
                 background-color: black;
             }
-
-
-
         }
 
-
-
     }
-
-
-
 
 }
 

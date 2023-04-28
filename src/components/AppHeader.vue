@@ -10,8 +10,6 @@ export default {
 </script>
 
 
-
-
 <template>
     <div class="header">
         <div class="add d-flex"><i class="fa-solid fa-circle-plus fa-2x"></i></div>
@@ -30,10 +28,6 @@ export default {
 
                 </ul>
             </div>
-
-
-
-
 
         </div>
 
@@ -106,21 +100,21 @@ export default {
                 list-style: none;
 
                 .fa-chevron-down {
-                    display: none;
+                        // display: none;
+                    opacity:0 ;
 
                 }
 
                 li:hover i {
                     color: yellow;
                     display: inline-block;
+                    opacity: 1;
                 }
 
                 li:hover #list {
                     color: yellow;
 
                 }
-
-
 
             }
         }

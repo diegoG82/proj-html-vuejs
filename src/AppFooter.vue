@@ -14,8 +14,6 @@ export default {
 </script>
 
 
-
-
 <template>
     <div class="footer mt-4">
 
@@ -45,9 +43,6 @@ export default {
                 <li class="mb-2" v-for="(element, index) in menuhours" :key="index">{{ element.day }} <span
                         class="yellow">{{ element.text }}</span> </li>
             </ul>
-
-
-
 
 
             <ul class=" justify-content-between mt-4 text-center">
@@ -83,8 +78,6 @@ export default {
             <p class="credits"><i class="fa-regular fa-copyright"></i> Copyright 2012-2020 Avada theme by <span
                     class="text-white">ThemeFusion</span> |All rights reserved| Powered by <span
                     class="text-white">WordPress</span></p>
-
-
 
         </div>
 
@@ -125,8 +118,6 @@ export default {
                 border-radius: 5px;
                 width: 40%;
             }
-
-
         }
 
     }
@@ -147,11 +138,13 @@ export default {
         .input {
             width: 80%;
             border-radius: 10px;
+            font-size: 0.8rem;
         }
 
         button {
             width: 80%;
-            padding: 0.2rem
+            padding: 0.2rem;
+            font-size: 0.8rem;
         }
 
         ul {
